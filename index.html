@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>مدارس الأوروبي الثانوية للتكنولوجيا التطبيقية</title>
+  <meta name="description" content="مدرسة ثانوية تكنولوجية في بورسعيد تقدم تخصصات مثل البرمجة، الذكاء الاصطناعي، وصيانة الأجهزة الطبية.">
+  <meta name="keywords" content="مدرسة, تكنولوجيا, ثانوية, بورسعيد, الذكاء الاصطناعي, برمجة, مدارس الأوروبي">
+  
+
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet" />
+  
+  <style>
+    /* خطوط وألوان */
+    @import url('https://fonts.googleapis.com/css2?family=Cairo&display=swap');
+
+    html {
+      scroll-behavior: smooth;
+    }
+    body {
+      
+      font-family: 'Cairo', Arial, sans-serif;
+      background: #f0f6fb;
+      color: #003a66;
+      margin: 0;
+      padding: 0;
+      direction: rtl;
+      body {
+  background: url('path/to/your-image.jpg') no-repeat center center fixed;
+  background-size: cover;
+  background-color: #121212; /* لون احتياطي إذا الصورة ما حملتش */
+  color: #e0e0e0;
+  font-family: 'Cairo', Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  direction: rtl;
+  position: relative;
+  z-index: 0;
+}
+
+    }
+    #main-content {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    /* الهيدر */
+    header {
+      background: linear-gradient(90deg, #005792 0%, #0077b6 100%);
+      color: white;
+      text-align: center;
+      padding: 25px 20px;
+      border-radius: 0 0 15px 15px;
+      box-shadow: 0 3px 15px rgba(0,119,182,0.5);
+    }
+    header h1 {
+      margin: 0;
+      font-weight: 900;
+      font-size: 2.5rem;
+      text-shadow: 0 0 8px rgba(0,119,182,0.7);
+    }
+    header .subheader {
+      margin-top: 10px;
+      font-weight: 500;
+      font-size: 1.2rem;
+      max-width: 800px;
+      margin-left: auto;
+      margin-right: auto;
+      color: #dbe9f4;
+      text-shadow: 0 0 6px rgba(0,119,182,0.5);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 15px;
+    }
+    header .subheader img {
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      border: 2px solid white;
+      box-shadow: 0 0 8px #00b4d8;
+    }
+
+    /* التنقل */
+    nav {
+      background: #0096c7;
+      text-align: center;
+      padding: 12px 0;
+      border-radius: 0 0 15px 15px;
+      margin-top: 15px;
+      box-shadow: 0 3px 12px rgba(0,150,199,0.7);
+      font-weight: 600;
+      font-size: 1.1rem;
+    }
+    nav a {
+      color: #caf0f8;
+      text-decoration: none;
+      margin: 0 20px;
+      transition: color 0.3s ease;
+      padding: 5px 8px;
+      border-radius: 8px;
+    }
+    nav a:hover {
+      background: #00b4d8;
+      color: #023e8a;
+      text-decoration: none;
+    }
+
+    /* الأقسام */
+    section {
+      
+      background: white;
+      margin: 25px 0;
+      padding: 30px 25px;
+      border-radius: 15px;
+      box-shadow: 0 3px 15px rgba(0,0,0,0.1);
+      color: #003a66;
+    }
+    section h2 {
+      margin-top: 0;
+      font-size: 2rem;
+      border-bottom: 3px solid #0096c7;
+      padding-bottom: 8px;
+      margin-bottom: 15px;
+      font-weight: 700;
+    }
+    section h3, section h4 {
+      font-weight: 500;
+      color: #0077b6;
+      margin-bottom: 15px;
+      line-height: 1.5;
+    }
+    section ul {
+      list-style-type: disc;
+      padding-right: 20px;
+      color: #0077b6;
+      font-weight: 600;
+      font-size: 1.1rem;
+    }
+    section ul li {
+      margin-bottom: 10px;
+    }
+
+    /* معرض الصور */
+    .image-gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 15px;
+      margin-top: 25px;
+    }
+    .image-gallery img {
+      width: 100%;
+      border-radius: 15px;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      cursor: pointer;
+      object-fit: cover;
+      height: 140px;
+    }
+    .image-gallery img:hover {
+      transform: scale(1.05);
+      box-shadow: 0 10px 35px rgba(0,0,0,0.3);
+    }
+
+    /* زر طلب الانضمام */
+    #home button {
+      background-color: #00b4d8;
+      color: white;
+      border: none;
+      padding: 14px 30px;
+      font-size: 1.2rem;
+      border-radius: 12px;
+      cursor: pointer;
+      box-shadow: 0 5px 18px rgba(0,180,216,0.6);
+      transition: background-color 0.3s ease;
+      font-weight: 700;
+      margin-top: 25px;
+    }
+    #home button:hover {
+      background-color: #0096c7;
+    }
+
+    /* نموذج الطلب */
+    #join-form {
+      display: none;
+    }
+    #join-form label {
+      font-weight: 600;
+      margin-top: 12px;
+      display: block;
+      color: #0077b6;
+    }
+    #join-form input, #join-form select {
+      width: 100%;
+      padding: 10px 15px;
+      margin-top: 6px;
+      border-radius: 10px;
+      border: 1.8px solid #00b4d8;
+      font-size: 1rem;
+      transition: border-color 0.3s ease;
+    }
+    #join-form input:focus, #join-form select:focus {
+      border-color: #0096c7;
+      outline: none;
+      box-shadow: 0 0 8px #00b4d8aa;
+    }
+    #join-form button {
+      margin-top: 18px;
+      background-color: #00b4d8;
+      color: white;
+      padding: 12px 28px;
+      font-size: 1.1rem;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      font-weight: 700;
+      box-shadow: 0 5px 15px rgba(0,180,216,0.5);
+      transition: background-color 0.3s ease;
+    }
+    #join-form button:hover {
+      background-color: #0096c7;
+    }
+
+    /* أيقونات التواصل الجانبية */
+    .side-icons {
+      position: fixed;
+      top: 50%;
+      right: 0;
+      transform: translateY(-50%);
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      z-index: 1000;
+    }
+    .icon {
+      width: 60px;
+      height: 60px;
+      background-color: #00b4d8;
+      border-radius: 50%;
+      box-shadow: 0 6px 30px rgba(0, 0, 0, 0.15);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      font-size: 28px;
+      cursor: pointer;
+      transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .icon:hover {
+      background-color: #0077b6;
+      transform: scale(1.2);
+      box-shadow: 0 8px 35px rgba(0, 0, 0, 0.35);
+    }
+    .phone {
+      background-color: #00b4d8;
+    }
+    .whatsapp {
+      background-color: #25d366;
+    }
+    .facebook {
+      background-color: #4267B2;
+    }
+
+    /* الفوتر */
+    footer {
+      background-color: #0077b6;
+      color: white;
+      text-align: center;
+      padding: 12px 20px;
+      font-weight: 600;
+      font-size: 1rem;
+      border-radius: 15px 15px 0 0;
+      margin-top: 40px;
+      box-shadow: inset 0 3px 8px rgba(0,0,0,0.15);
+    }
+
+    /* استجابة */
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 1.8rem;
+      }
+      header .subheader {
+        flex-direction: column;
+        gap: 8px;
+      }
+      nav a {
+        margin: 0 10px;
+        font-size: 1rem;
+      }
+      .image-gallery img {
+        height: 110px;
+      }
+      .side-icons {
+        top: auto;
+        bottom: 10px;
+        right: 50%;
+        transform: translateX(50%);
+        flex-direction: row;
+        gap: 12px;
+      }
+    }
+    
+  </style>
+</head>
+
+<body>
+
+<header>
+  <h1>مدارس الأوروبي الثانوية للتكنولوجيا التطبيقية</h1>
+  <div class="subheader">
+    <img src="img/logo.png.jpg" alt="شعار المدرسة" />
+    <p>مدرسة ثانوية تكنولوجية في بورسعيد تقدم تخصصات مثل البرمجة، الذكاء الاصطناعي، وصيانة الأجهزة الطبية.</p>
+  </div>
+</header>
+
+<nav>
+  <a href="#home">الرئيسية</a>
+  <a href="#about">عن المدرسة</a>
+  <a href="#specialties">التخصصات</a>
+  <a href="#gallery">المعرض</a>
+  <a href="#contact">تواصل معنا</a>
+  <a href ="#news">الاخبار</a>
+</nav>
+
+<div id="main-content">
+
+  <section id="home">
+    <h2>مرحبًا بكم في مدارس الأوروبي</h2>
+    <p style="font-weight: 600; font-size: 1.2rem; margin-bottom: 20px;">
+      نرحب بجميع الطلاب الراغبين في الالتحاق بتخصصاتنا المتطورة في التكنولوجيا التطبيقية.
+    </p>
+    <button onclick="document.getElementById('join-form').style.display='block'; this.style.display='none';">طلب الانضمام للمدرسة</button>
+
+   <form id="join-form" action="https://formspree.io/f/xldneakl" method="POST" style="display:none;">
+  <input type="text" id="student-name" name="student-name" required placeholder="مثال: محمد أحمد علي" />
+
+  <label for="student-grade">الصف الدراسي:</label>
+  <select id="student-grade" name="student-grade" required>
+    <option value="">اختر الصف</option>
+    <option value="1">الصف الأول الثانوي</option>
+    <option value="2">الصف الثاني الثانوي</option>
+    <option value="3">الصف الثالث الثانوي</option>
+  </select>
+
+  <label for="specialty">التخصص المطلوب:</label>
+  <select id="specialty" name="specialty" required>
+    <option value="">اختر تخصصًا</option>
+    <option value="programming">صيانة وتشغيل انظمة وشبكات الحاسب </option>
+    <option value="ai">برمجة وذكاءاصطناعي</option>
+    <option value="medical-devices">صيانة الأجهزة الطبية</option>
+    <option value="hpp">محركات بحريه</option>
+    <option value="ds">فني معمل كيمياء</option>
+    <option value="dsss">الكهرباء الصناعيه </option>
+    <option value="ss">plcقسم التحكم الالي </option>
+    <option value="saa">قسم الملابس الجاهزه</option>
+  </select>
+
+  <button type="submit">إرسال الطلب</button>
+</form>
+
+    </form>
+  </section>
+
+  <section id="about">
+    <h2>عن المدرسة</h2>
+    <h3>مدرسة الأوروبي للتكنولوجيا التطبيقية هي مؤسسة تعليمية رائدة في مجال التعليم التكنولوجي ببورسعيد، تهدف إلى إعداد جيل متميز من الطلاب في تخصصات البرمجة والذكاء الاصطناعي. تحتوي المدرسة على فريق من أمهر المهندسين والدكاترة المتخصصين الذين يحرصون على توفير بيئة تعليمية حديثة ومتطورة.
+
+تضم المدرسة أقسامًا متعددة تلبي احتياجات سوق العمل المتجدد، مما يمكن الطلاب من اكتساب مهارات عملية وتقنية عالية تؤهلهم للتميز في مجالات التكنولوجيا المختلفة.</h3>
+    <ul>
+      <li>تهدف المدرسة إلى تأهيل الطلاب لسوق العمل من خلال تخصصات تكنولوجية حديثة مثل الذكاء الاصطناعي والبرمجة، 
+      وتوفر بيئة تعليمية تفاعلية مجهزة بأحدث الأجهزة.</li>
+    <li>يوجد أقسام وتخصصات مجانية و أقسام وتخصصات بمصروفات ميسرة وبالتقسيط </li>
+    <li>⛔️ تتبني مجموعة مدارس الأوروبي سياسة التطوير المستمر في أساليب التعليم والتدريب بشكل دوري ، وفق أحدث النظريات العلمية التي توصي بها كبري المؤتمرات والأبحاث العلمية ، بمشاركتها الفعالة في هذه المؤتمرات.</li>
+    <li>⛔️ { الدراسة بنظام التعليم الألماني } بحيث تكون الدراسة العملية بنسبة ٧٠٪ ، داخل ورش مجهزة بأحدث الماكينات والأدوات ، والتقنيات التكنولوجية الحديثة  في مجالات التخصص وعلي يد مهندسين وخبراء متخصصين في المجال ، بالإضافة إلى التعليم النظري العادي { اللغة العربية ، اللغة الإنجليزية ، الرياضيات ، الميكانيكا ، والتربية الدينية  ، تكنولوجيا المعلومات ، والمواد الهندسية ... إلخ } </li>
+    <li>🛑 مدة الدراسة ثلاث سنوات [ دراسة عملية ونظرية وتطبيقة] </li>
+    <li>⚠️⚠️ توجد باصات خاصة بنا لنقل الطلاب من محل إقامتهم  إلي جميع الأفرع  ⚠️⚠️⚠️</li>
+    </ul>
+  </section>
+
+  <section id="specialties">
+    <h2>التخصصات المتاحة</h2>
+    <ul>
+      <li>البرمجة والذكاء الاصطناعي</li>
+      <li>صيانة وتشغيل انظمة وشبكات الحاسب </li>
+      <li>المحركات البحريه</li>
+      <li>الكهرباء الصناعيه </li>
+      <li>الملابس الجاهزه</li>
+      <li>صيانة الاجهزه الطبية</li>
+      <li>plc قسم التحكم الالي </li>
+      <li>فني معمل كيمياء</li>
+      <li>فني البترول والبتروكيماويات</li>
+    </ul>
+  </section>
+
+  <section id="gallery">
+    <h2>معرض الصور</h2>
+    <div class="image-gallery">
+      <img src="img/activity.png.jpg" alt="صورة 1" />
+      <img src="img/btrol.png.jpg" alt="صورة 2" />
+      <img src="img/car.png.jpg" alt="صورة 3" />
+      <img src="img/kemawy.png.jpg" alt="صورة 4" />
+      <img src ="img/lham.png.jpg">
+      <img src ="img/mshcar.png.jpg">
+      <img src ="img/plc.png.jpg">
+      <img src ="img/school.jpg.jpg">
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>تواصل معنا</h2>
+    <p>للاستفسارات أو المعلومات، يمكنك التواصل معنا عبر:</p>
+    <ul>
+      <li>الهاتف:01287805000</li>
+      <li>البريد الإلكتروني: info@european-schools.com</li>
+      <li>العنواين:- بورسعيد امام قصر الصقافة</li>
+    </ul>
+  </section>
+  <section id="about">
+    <h1>الاخبار</h1>
+    ✅️✅️بشري سارة لأبنائنا الطلبة والطالبات ✅️✅️
+في خطوة تعد الأولى من نوعها:
+🔳 المجلس الأعلى للجامعات يوافق على فتح باب التقدم لمسابقة الالتحاق بكليات الحاسبات والذكاء الاصطناعي لخريجي المدارس الفنية المتخصصة في تكنولوجيا الحاسبات والذكاء الاصطناعي
+🔳 إقرار النسبة المرنة لخريجي مدارس التعليم الفني والتكنولوجيا التطبيقية 
+...............................................................
+بيان صادر عن وزارة التربية والتعليم والتعليم الفني:
+في خطوة تعد الأولى من نوعها في إطار التنسيق والتعاون الوثيق بين وزارة التربية والتعليم والتعليم الفني ووزارة التعليم العالي والبحث العلمي وتحت إشراف مباشر من الدكتور مصطفى مدبولي رئيس مجلس الوزراء، وافق المجلس الأعلى للجامعات، اليوم، على فتح باب التقدم لمسابقة الالتحاق بكليات الحاسبات والذكاء الاصطناعي لخريجي المدارس الفنية المتخصصة في تكنولوجيا الحاسبات والذكاء الاصطناعي ومدارس التكنولوجيا التطبيقية المتخصصة بما فيها مدارس "we”.
+كما وافق المجلس الأعلى للجامعات على إقرار  النسبة المرنة لخريجي مدارس التعليم الفني ومدارس التكنولوجيا التطبيقية عند التقدم لتنسيق الجامعات التكنولوجية، حيث سيتم تنسيق خريجي كل نوعية بشكل منفصل وتحديد الحدود الدنيا بشكل مختلف حسب عدد المتقدمين من كل نوعية (المدارس الفنية نظام خمسة سنوات - نظام المدارس الفنية ٣ سنوات - المعاهد الفنية سنتان بعد الثانوية ).
+
+<img src="img/news.png.jpg"
+  </section>
+
+</div>
+
+<!-- أيقونات التواصل الجانبية -->
+<div class="side-icons">
+  <a href="tel:01287805000" class="icon phone" title="اتصل بنا"><i class="fas fa-phone"></i></a>
+  <a href="https://wa.me/01287804000" target="_blank" class="icon whatsapp" title="واتساب"><i class="fab fa-whatsapp"></i></a>
+  <a href="https://www.facebook.com/ecct1/?locale=ar_AR" target="_blank" class="icon facebook" title="فيسبوك"><i class="fab fa-facebook-f"></i></a>
+</div>
+
+<footer>
+  جميع الحقوق محفوظة &copy; 2025 - مدارس الأوروبي الثانوية للتكنولوجيا التطبيقية
+</br>
+ تصميم وبرمجة الطالب: هشام اسامة♥ 
+
+</footer>
+
+</body>
+</html>
